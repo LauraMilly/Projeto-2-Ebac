@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+  <div class="container-img">
+    <img src="img/undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_calling_mcgf_gyrw_2jtb_-1-_eb38_-1-_fikj_5ef3_-1-_b52m_-1-_7noa_-1-_qlvj_-1-_f9ev_-2-_kq38.svg" alt="">
+  </div>
+  <div class="container-form">
+    <form id="contactForm">
+      <h1>Conecte-se</h1>
+      <div class="img-icon">
+      <img src="img/undraw_female_avatar_efig.svg" alt="">
+    </div>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required>
+
+      <button type="submit">Cadastrar</button>
+    
+    <table id="contactTable">
+      <thead>
+        <tr>
+          <th><i class="fas fa-user"></i> Contato</th>
+          <th><i class="fas fa-phone"></i> Telefone</th>
+        </tr>
+      </thead>
+      <tbody id="contactList">
+        
+      </tbody>
+      </table>
+    </form>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
